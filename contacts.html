@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Контакты косметолога Velvet Skin: запись на консультацию, адрес, телефон и форма обратной связи.">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Контакты | Velvet Skin</title>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="Velvet Skin, главная страница">Velvet Skin</a>
+
+    <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Основная навигация" data-nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="services.html">Услуги</a></li>
+        <li><a href="contacts.html" aria-current="page">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero contacts-hero" aria-labelledby="contacts-title">
+      <div class="page-hero-copy" data-reveal>
+        <p class="section-kicker">Запись</p>
+        <h1 id="contacts-title">Расскажите, что сейчас важно вашей коже</h1>
+        <p>Оставьте заявку, и мы подберем удобное время для консультации или процедуры.</p>
+      </div>
+      <div class="page-hero-media parallax-frame" data-parallax>
+        <img src="https://images.unsplash.com/photo-1607008829749-c0f284a49828?auto=format&fit=crop&w=1500&q=85" alt="Светлый косметологический кабинет для консультации">
+      </div>
+    </section>
+
+    <section class="contact-section" aria-labelledby="contact-form-title">
+      <div class="contact-details" data-reveal>
+        <p class="section-kicker">Связь</p>
+        <h2>Velvet Skin Studio</h2>
+        <address>
+          <span>г. Москва, ул. Петровка, 17</span>
+          <a href="tel:+79991234567">+7 999 123-45-67</a>
+          <a href="mailto:hello@velvetskin.ru">hello@velvetskin.ru</a>
+        </address>
+        <dl class="schedule-list">
+          <div>
+            <dt>Пн-Пт</dt>
+            <dd>10:00-20:00</dd>
+          </div>
+          <div>
+            <dt>Сб</dt>
+            <dd>11:00-18:00</dd>
+          </div>
+          <div>
+            <dt>Вс</dt>
+            <dd>по записи</dd>
+          </div>
+        </dl>
+      </div>
+
+      <form class="contact-form" id="contact-form" action="#" method="post" novalidate data-contact-form>
+        <div class="form-heading">
+          <p class="section-kicker">Форма обратной связи</p>
+          <h2 id="contact-form-title">Записаться на консультацию</h2>
+        </div>
+
+        <div class="form-field">
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name" autocomplete="name" required minlength="2" placeholder="Ваше имя">
+          <span class="form-error" data-error-for="name"></span>
+        </div>
+
+        <div class="form-field">
+          <label for="phone">Телефон</label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel" required placeholder="+7 999 123-45-67">
+          <span class="form-error" data-error-for="phone"></span>
+        </div>
+
+        <div class="form-field">
+          <label for="service">Интересующая услуга</label>
+          <select id="service" name="service" required>
+            <option value="">Выберите услугу</option>
+            <option value="cleansing">Атравматичная чистка</option>
+            <option value="hydration">Увлажняющий уход</option>
+            <option value="barrier">Восстановление барьера</option>
+            <option value="anti-age">Антивозрастная программа</option>
+            <option value="consultation">Нужна консультация</option>
+          </select>
+          <span class="form-error" data-error-for="service"></span>
+        </div>
+
+        <div class="form-field">
+          <label for="message">Комментарий</label>
+          <textarea id="message" name="message" rows="5" placeholder="Расскажите о коже, пожеланиях или удобном времени"></textarea>
+          <span class="form-error" data-error-for="message"></span>
+        </div>
+
+        <label class="form-consent" for="consent">
+          <input type="checkbox" id="consent" name="consent" required>
+          <span>Я согласен на обработку данных для связи по заявке</span>
+        </label>
+        <span class="form-error" data-error-for="consent"></span>
+
+        <button class="button button-primary" type="submit">Отправить заявку</button>
+        <p class="form-status" aria-live="polite" data-form-status></p>
+      </form>
+    </section>
+
+    <section class="studio-location layered-section" aria-labelledby="location-title">
+      <div class="location-map" aria-label="Зона карты">
+        <p>Карта появится здесь</p>
+      </div>
+      <div class="location-copy" data-reveal>
+        <p class="section-kicker">Атмосфера</p>
+        <h2 id="location-title">Тихое пространство для внимательного ухода</h2>
+        <p>Кабинет оформлен в светлой палитре, чтобы консультация и процедура проходили спокойно и комфортно.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <a class="logo" href="index.html">Velvet Skin</a>
+      <p>Косметология с вниманием к коже, ритму жизни и естественной красоте.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Навигация в подвале">
+      <a href="index.html">Главная</a>
+      <a href="services.html">Услуги</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <address class="footer-contacts">
+      <span>г. Москва, ул. Петровка, 17</span>
+      <a href="tel:+79991234567">+7 999 123-45-67</a>
+      <a href="mailto:hello@velvetskin.ru">hello@velvetskin.ru</a>
+    </address>
+  </footer>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
